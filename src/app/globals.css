@@ -1,0 +1,231 @@
+/* ============================================================
+   FOREST — Design Tokens
+   Open economic infrastructure for the AI-native economy.
+   Ported from colors_and_type.css (Claude Design bundle).
+   ============================================================ */
+
+:root {
+  /* ---------- Canvas — the "paper" the brand lives on ---------- */
+  --forest-paper:      #F5F0E6;
+  --forest-paper-2:    #EDE6D6;
+  --forest-paper-3:    #E2D8C3;
+
+  /* ---------- Moss — primary brand family ---------- */
+  --forest-moss-50:    #EAEDE3;
+  --forest-moss-100:   #D4DBC4;
+  --forest-moss-200:   #B4BFA0;
+  --forest-moss-300:   #8E9C77;
+  --forest-moss-400:   #6B7A56;
+  --forest-moss-500:   #4F5C3E;
+  --forest-moss-600:   #3C4830;
+  --forest-moss-700:   #2C3623;
+  --forest-moss-800:   #1E2618;
+  --forest-moss-900:   #131810;
+
+  /* ---------- Bark — warm browns ---------- */
+  --forest-bark-50:    #EFE7D8;
+  --forest-bark-100:   #DCCDB4;
+  --forest-bark-200:   #C3AD88;
+  --forest-bark-300:   #A38A63;
+  --forest-bark-400:   #7F6948;
+  --forest-bark-500:   #604E33;
+  --forest-bark-600:   #483923;
+  --forest-bark-700:   #322818;
+  --forest-bark-800:   #1F1810;
+
+  /* ---------- Clay — accent ---------- */
+  --forest-clay-100:   #EFD9C1;
+  --forest-clay-300:   #D9A477;
+  --forest-clay-500:   #B87333;
+  --forest-clay-700:   #7A4A1F;
+
+  /* ---------- Lichen — dusty sage-teal accent ---------- */
+  --forest-lichen-100: #D7DFD7;
+  --forest-lichen-300: #9AB0A3;
+  --forest-lichen-500: #5E7A6B;
+  --forest-lichen-700: #3A4E43;
+
+  /* ---------- Ink — never pure black ---------- */
+  --forest-ink:        #1A1F16;
+  --forest-ink-soft:   #2E3328;
+
+  /* ---------- Semantic tokens ---------- */
+  --bg-canvas:         var(--forest-paper);
+  --bg-surface:        #FBF7EE;
+  --bg-surface-2:      var(--forest-paper-2);
+  --bg-inset:          var(--forest-paper-3);
+  --bg-overlay:        rgba(30, 38, 24, 0.55);
+
+  --fg-1:              var(--forest-ink);
+  --fg-2:              var(--forest-moss-700);
+  --fg-3:              var(--forest-bark-400);
+  --fg-4:              var(--forest-bark-300);
+  --fg-on-moss:        #F5F0E6;
+  --fg-on-clay:        #FBF7EE;
+
+  --brand-primary:       var(--forest-moss-500);
+  --brand-primary-hover: var(--forest-moss-600);
+  --brand-primary-press: var(--forest-moss-700);
+  --brand-accent:        var(--forest-clay-500);
+  --brand-muted:         var(--forest-lichen-500);
+
+  --border-soft:     rgba(48, 58, 37, 0.08);
+  --border-default:  rgba(48, 58, 37, 0.14);
+  --border-strong:   rgba(48, 58, 37, 0.28);
+
+  --success: #5A7A47;
+  --warning: #B87333;
+  --danger:  #9B4A3E;
+  --info:    var(--forest-lichen-500);
+
+  /* ---------- Type scale ---------- */
+  --fs-display:  clamp(3.5rem, 6vw, 5.75rem);
+  --fs-h1:       clamp(2.25rem, 3.5vw, 3.25rem);
+  --fs-h2:       clamp(1.75rem, 2.5vw, 2.25rem);
+  --fs-h3:       1.5rem;
+  --fs-h4:       1.25rem;
+  --fs-body-lg:  1.125rem;
+  --fs-body:     1rem;
+  --fs-body-sm:  0.9375rem;
+  --fs-caption:  0.8125rem;
+  --fs-micro:    0.6875rem;
+
+  --lh-display:  1.08;
+  --lh-heading:  1.2;
+  --lh-body:     1.55;
+  --lh-ui:       1.35;
+
+  --ls-display: -0.02em;
+  --ls-heading: -0.012em;
+  --ls-body:    0;
+  --ls-caps:    0.14em;
+
+  --fw-regular:  400;
+  --fw-medium:   500;
+  --fw-semibold: 600;
+  --fw-bold:     700;
+
+  /* ---------- Spacing / radii / shadows / motion ---------- */
+  --space-0:   0;
+  --space-1:   4px;
+  --space-2:   8px;
+  --space-3:   12px;
+  --space-4:   16px;
+  --space-5:   24px;
+  --space-6:   32px;
+  --space-7:   48px;
+  --space-8:   64px;
+  --space-9:   96px;
+  --space-10: 128px;
+
+  --radius-sm:   6px;
+  --radius-md:   12px;
+  --radius-lg:   20px;
+  --radius-xl:   28px;
+  --radius-2xl:  40px;
+  --radius-pill: 999px;
+
+  --shadow-xs:    0 1px 2px rgba(48, 58, 37, 0.06);
+  --shadow-sm:    0 2px 6px rgba(48, 58, 37, 0.06), 0 1px 2px rgba(48, 58, 37, 0.04);
+  --shadow-md:    0 6px 20px rgba(48, 58, 37, 0.08), 0 2px 6px rgba(48, 58, 37, 0.04);
+  --shadow-lg:    0 16px 40px rgba(48, 58, 37, 0.10), 0 4px 12px rgba(48, 58, 37, 0.05);
+  --shadow-inset: inset 0 1px 2px rgba(48, 58, 37, 0.08);
+
+  --ease-out:     cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease-inout:   cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-organic: cubic-bezier(0.34, 0.1, 0.22, 1);
+  --dur-fast:  160ms;
+  --dur-base:  260ms;
+  --dur-slow:  420ms;
+  --dur-page:  640ms;
+}
+
+/* ============================================================
+   BASE ELEMENT STYLES
+   ============================================================ */
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg-canvas);
+  color: var(--fg-1);
+  font-family: var(--font-sans, 'Inter', -apple-system, BlinkMacSystemFont, sans-serif);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, .serif {
+  font-family: var(--font-serif, 'Source Serif 4', Georgia, serif);
+  font-weight: 400;
+  color: var(--fg-1);
+}
+
+h1 { font-size: var(--fs-h1); line-height: var(--lh-heading); letter-spacing: var(--ls-heading); margin: 0; }
+h2 { font-size: var(--fs-h2); line-height: var(--lh-heading); letter-spacing: var(--ls-heading); margin: 0; }
+h3 { font-size: var(--fs-h3); line-height: var(--lh-heading); margin: 0; }
+h4 {
+  font-size: var(--fs-h4);
+  line-height: var(--lh-heading);
+  font-family: var(--font-sans, 'Inter', sans-serif);
+  font-weight: var(--fw-semibold);
+  margin: 0;
+}
+
+.display {
+  font-family: var(--font-serif, 'Source Serif 4', Georgia, serif);
+  font-size: var(--fs-display);
+  line-height: var(--lh-display);
+  letter-spacing: var(--ls-display);
+  font-weight: 400;
+}
+
+.eyebrow {
+  font-family: var(--font-sans, 'Inter', sans-serif);
+  font-size: var(--fs-caption);
+  text-transform: uppercase;
+  letter-spacing: var(--ls-caps);
+  color: var(--fg-3);
+  font-weight: var(--fw-medium);
+}
+
+p {
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  color: var(--fg-1);
+  max-width: 68ch;
+  margin: 0 0 1.4em;
+}
+
+code, pre, kbd {
+  font-family: var(--font-mono, 'JetBrains Mono', ui-monospace, monospace);
+  font-size: 0.9em;
+}
+code {
+  background: var(--bg-inset);
+  padding: 0.1em 0.35em;
+  border-radius: var(--radius-sm);
+}
+
+a {
+  color: var(--brand-primary);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.22em;
+  text-decoration-color: rgba(79, 92, 62, 0.35);
+  transition: text-decoration-color var(--dur-fast) var(--ease-out);
+}
+a:hover { text-decoration-color: var(--brand-primary); }
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+img { display: block; max-width: 100%; }
+
+::selection { background: var(--forest-moss-200); color: var(--forest-moss-800); }
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-thumb { background: rgba(48, 58, 37, 0.16); border-radius: 999px; }
