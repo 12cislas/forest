@@ -1,79 +1,52 @@
 .root {
-  background: var(--bg-canvas);
   border-top: 1px solid var(--border-soft);
-  padding: 64px 0 40px;
-  margin-top: 120px;
+  margin-top: 96px;
 }
 
 .inner {
-  max-width: 1160px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 0 32px;
-  display: grid;
-  grid-template-columns: 1.4fr repeat(3, 1fr);
-  gap: 48px;
+  padding: 28px 24px 40px;
 }
 
-.brandCol { display: flex; flex-direction: column; gap: 12px; }
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
 
-.brand { display: flex; align-items: center; gap: 10px; }
-.mark { width: 22px; height: 22px; }
+.mark {
+  width: 20px;
+  height: 20px;
+}
 
 .brandText {
   font-family: var(--font-serif, 'Source Serif 4', Georgia, serif);
-  font-size: 22px;
+  font-size: 20px;
   font-style: italic;
   color: var(--fg-1);
-  letter-spacing: -0.01em;
 }
 
-.tagline {
-  font-family: var(--font-serif, 'Source Serif 4', Georgia, serif);
-  font-size: 16px;
-  font-style: italic;
-  color: var(--fg-2);
-  max-width: 32ch;
-  margin: 0;
-  line-height: 1.45;
-}
-
-.colTitle {
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  color: var(--fg-3);
-  font-weight: 500;
-  margin-bottom: 14px;
-}
-
-.colLink {
-  display: block;
+.copy {
   font-size: 14px;
   color: var(--fg-2);
-  text-decoration: none;
-  padding: 5px 0;
-  transition: color var(--dur-fast) var(--ease-out);
+  margin: 0 0 10px;
 }
-.colLink:hover { color: var(--fg-1); text-decoration: none; }
 
-.meta {
-  max-width: 1160px;
-  margin: 40px auto 0;
-  padding: 18px 32px 0;
+.nav {
   display: flex;
-  justify-content: space-between;
-  font-size: 12px;
-  color: var(--fg-3);
-  border-top: 1px solid var(--border-soft);
-  font-family: var(--font-serif, 'Source Serif 4', Georgia, serif);
-  font-style: italic;
+  flex-wrap: wrap;
+  gap: 14px;
 }
 
-@media (max-width: 768px) {
-  .inner {
-    grid-template-columns: 1fr 1fr;
-    gap: 32px;
-  }
-  .brandCol { grid-column: 1 / -1; }
-  .meta { flex-direction: column; gap: 8px; }
+.nav a {
+  color: var(--fg-2);
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.nav a:hover {
+  color: var(--fg-1);
+  text-decoration: none;
 }
